@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+header{
+  padding-bottom: 65px;
+
+}
+.header-words {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*tab centering*/
+.tabs-format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lightmode .tabs-format ::selection {
+  color: var(--base-variant)
+}
+.lightmode .tabs-format ::selection {
+  color: var(--base-variant)
+}
+
+.tabs-format a:hover {
+  color: var(--base-variant)
+}
+
+/*add padding between the links*/
+.tabs-format a{
+  padding: 15px;
+}
+
+/*Site Title*/
+.description {
+  display: flex;
+  max-width: 44ch;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size:1.5rem ;
+  font-weight: 500;
+}
+
+/*Line Under Title*/
+.description p{
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size:1rem ;
+  font-weight: 300;
+  color: var(--base-variant);
+}
+
+
+/*nightmode button v effects*/
+#theme-switch:hover{
+  pointer-events: all;
+  scale: 1.18;
+}
+
+/*hello*/
+
+
+

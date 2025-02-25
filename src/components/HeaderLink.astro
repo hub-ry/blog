@@ -1,5 +1,7 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import '../styles/header.css';
+import '../styles/global.css';
 
 type Props = HTMLAttributes<'a'>;
 
@@ -9,16 +11,8 @@ const subpath = pathname.match(/[^\/]+/g);
 const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 ---
 
-<a href={href} class:list={[className, { active: isActive }]} {...props}>
+<a href={href} class:list={[className, isActive ? "text-black dark:text-white" : "text-gray-500 dark:text-gray-300" ]} {...props}>
 	<slot />
 </a>
-<style>
-	a {
-		display: inline-block;
-		text-decoration: none;
-	}
-	a.active {
-		font-weight: bolder;
-		text-decoration: underline;
-	}
-</style>
+
+

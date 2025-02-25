@@ -1,6 +1,6 @@
 ---
-title: 'Third post'
-description: 'Lorem ipsum dolor sit amet'
+title: Sledding down Purdue's Slayter Hill!
+description: I had the oppourtunity to sled down Slayter Hill with my friends before midterms. The hill was packed with students, and the sole tree in the path was lined with garbage bags of straw.
 pubDate: 'Jul 22 2022'
 heroImage: '/blog-placeholder-2.jpg'
 ---

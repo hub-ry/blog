@@ -1,0 +1,18 @@
+
+.trademark{
+display: flex;
+margin-left: 400px;
+font-size: small;
+padding-top: 25px;
+padding-bottom: 40px;
+white-space: nowrap;
+
+}
+
+
+.icon-container {
+  display: flex;
+  padding-left: 275px;
+  justify-content: left;
+  gap: 10px;
+}
