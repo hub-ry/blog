@@ -1,9 +1,10 @@
+const { default: tailwindcss } = require("@tailwindcss/vite");
+
 module.exports = {
-    lightMode: ['class'],
   theme: {
     extend: {
       // ...existing code...
     },
   },
-  plugins: [],
+  plugins: [tailwindcss],
 };
