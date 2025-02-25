@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"> <head><style>.trademark{display:flex;margin-left:400px;font-size:small;padding-top:25px;padding-bottom:40px;white-space:nowrap}.icon-container{display:flex;padding-left:275px;justify-content:left;gap:10px}
+</style>
+<link rel="stylesheet" href="/_astro/global.CZ4iPkOz.css">
+<link rel="stylesheet" href="/_astro/header.DiFQ2JJk.css"></head> <body class="max-w-prose m-auto "> <header> <nav> <div class="tabs-format"> <a href="/" class="text-gray-500 dark:text-gray-300"> home </a> <a href="/updates" class="text-gray-500 dark:text-gray-300"> updates </a> <a href="/notes" class="text-gray-500 dark:text-gray-300"> notes </a> <a href="/about" class="text-gray-500 dark:text-gray-300"> about </a> <a>|</a> <button id="theme-switch"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"></path></svg> </button> </div> <script>
+			console.log('Script is running');
+
+// Check 2: Button exists
+const button = document.getElementById('theme-switch');
+if (button) {
+	console.log('Button found!');
+} else {
+	console.log('Button not found!');
+}
+
+// Check 3: Click works
+if (button) {
+	button.addEventListener('click', () => {
+		console.log('Button clicked!');
+		document.body.classList.toggle('lightmode');
+		console.log('Mode is now:', document.body.classList.contains('lightmode') ? 'light' : 'dark');
+	});
+}
+
+
+
+
+
+		</script> <div class="description"> <div class=""> <h2 class="text-2xl font-medium"><a>mister-ry</a></h2> <p>a home for thought</p> </div> </div> </nav> </header> <main> <article> <div class="prose"> <div class="title"> <div class="date"> <time datetime="2025-01-01T05:00:00.000Z"> Jan 1, 2025 </time>  </div> <h1>Reading To Study</h1> <hr> </div>  <p>Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.</p>
+<h2 id="headings">Headings</h2>
+<p>The following HTML <code>&#x3C;h1></code>—<code>&#x3C;h6></code> elements represent six levels of section headings. <code>&#x3C;h1></code> is the highest section level while <code>&#x3C;h6></code> is the lowest.</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h2 id="paragraph">Paragraph</h2>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<h2 id="images">Images</h2>
+<h3 id="syntax">Syntax</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">Alt text</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">./full/or/relative/path/of/image</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<h3 id="output">Output</h3>
+<p><img src="/blog-placeholder-about.jpg" alt="blog placeholder"></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+<h3 id="blockquote-without-attribution">Blockquote without attribution</h3>
+<h4 id="syntax-1">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#85E89D">> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  </span></span>
+<span class="line"><span style="color:#85E89D">> </span><span style="color:#E1E4E8;font-weight:bold">**Note**</span><span style="color:#85E89D"> that you can use </span><span style="color:#E1E4E8;font-style:italic">_Markdown syntax_</span><span style="color:#85E89D"> within a blockquote.</span></span></code></pre>
+<h4 id="output-1">Output</h4>
+<blockquote>
+<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.<br>
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
+</blockquote>
+<h3 id="blockquote-with-attribution">Blockquote with attribution</h3>
+<h4 id="syntax-2">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#85E89D">> Don't communicate by sharing memory, share memory by communicating.&#x3C;br></span></span>
+<span class="line"><span style="color:#85E89D">> — &#x3C;cite>Rob Pike[</span><span style="color:#DBEDFF;text-decoration:underline">^1</span><span style="color:#85E89D">]&#x3C;/cite></span></span></code></pre>
+<h4 id="output-2">Output</h4>
+<blockquote>
+<p>Don’t communicate by sharing memory, share memory by communicating.<br>
+— <cite>Rob Pike<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></cite></p>
+</blockquote>
+<h2 id="tables">Tables</h2>
+<h3 id="syntax-3">Syntax</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">| Italics   | Bold     | Code   |</span></span>
+<span class="line"><span style="color:#E1E4E8">| --------- | -------- | ------ |</span></span>
+<span class="line"><span style="color:#E1E4E8">| </span><span style="color:#E1E4E8;font-style:italic">_italics_</span><span style="color:#E1E4E8"> | </span><span style="color:#E1E4E8;font-weight:bold">**bold**</span><span style="color:#E1E4E8"> | </span><span style="color:#79B8FF">`code`</span><span style="color:#E1E4E8"> |</span></span></code></pre>
+<h3 id="output-3">Output</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Italics</th><th>Bold</th><th>Code</th></tr></thead><tbody><tr><td><em>italics</em></td><td><strong>bold</strong></td><td><code>code</code></td></tr></tbody></table>
+<h2 id="code-blocks">Code Blocks</h2>
+<h3 id="syntax-4">Syntax</h3>
+<p>we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">```html</span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;!doctype html></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;html lang="en"></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;head></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;meta charset="utf-8" /></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;title>Example HTML5 Document&#x3C;/title></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/head></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;body></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;p>Test&#x3C;/p></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/body></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/html></span></span>
+<span class="line"><span style="color:#E1E4E8">```</span></span></code></pre>
+<h3 id="output-4">Output</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&#x3C;!</span><span style="color:#85E89D">doctype</span><span style="color:#B392F0"> html</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">html</span><span style="color:#B392F0"> lang</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"en"</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">head</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">meta</span><span style="color:#B392F0"> charset</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"utf-8"</span><span style="color:#E1E4E8"> /></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">title</span><span style="color:#E1E4E8">>Example HTML5 Document&#x3C;/</span><span style="color:#85E89D">title</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/</span><span style="color:#85E89D">head</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">body</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">>Test&#x3C;/</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/</span><span style="color:#85E89D">body</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">html</span><span style="color:#E1E4E8">></span></span></code></pre>
+<h2 id="list-types">List Types</h2>
+<h3 id="ordered-list">Ordered List</h3>
+<h4 id="syntax-5">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">1.</span><span style="color:#E1E4E8"> First item</span></span>
+<span class="line"><span style="color:#FFAB70">2.</span><span style="color:#E1E4E8"> Second item</span></span>
+<span class="line"><span style="color:#FFAB70">3.</span><span style="color:#E1E4E8"> Third item</span></span></code></pre>
+<h4 id="output-5">Output</h4>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h3 id="unordered-list">Unordered List</h3>
+<h4 id="syntax-6">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> List item</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Another item</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> And another item</span></span></code></pre>
+<h4 id="output-6">Output</h4>
+<ul>
+<li>List item</li>
+<li>Another item</li>
+<li>And another item</li>
+</ul>
+<h3 id="nested-list">Nested list</h3>
+<h4 id="syntax-7">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Fruit</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Apple</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Orange</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Banana</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Dairy</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Milk</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Cheese</span></span></code></pre>
+<h4 id="output-7">Output</h4>
+<ul>
+<li>Fruit
+<ul>
+<li>Apple</li>
+<li>Orange</li>
+<li>Banana</li>
+</ul>
+</li>
+<li>Dairy
+<ul>
+<li>Milk</li>
+<li>Cheese</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
+<h3 id="syntax-8">Syntax</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">&#x3C;abbr title="Graphics Interchange Format">GIF&#x3C;/abbr> is a bitmap image format.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">H&#x3C;sub>2&#x3C;/sub>O</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">X&#x3C;sup>n&#x3C;/sup> + Y&#x3C;sup>n&#x3C;/sup> = Z&#x3C;sup>n&#x3C;/sup></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Press &#x3C;kbd>CTRL&#x3C;/kbd> + &#x3C;kbd>ALT&#x3C;/kbd> + &#x3C;kbd>Delete&#x3C;/kbd> to end the session.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Most &#x3C;mark>salamanders&#x3C;/mark> are nocturnal, and hunt for insects, worms, and other small creatures.</span></span></code></pre>
+<h3 id="output-8">Output</h3>
+<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.</p>
+<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>The above quote is excerpted from Rob Pike’s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015. <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  </div> </article> </main> <hr> <footer> <div class="trademark max-w-prose mx-150 px-1">
+&copy; 2025 Ryan Hubbart. All rights reserved.
+<div class="icon-container"> <a class="" href="https://www.instagram.com/ryanhubbart" target="_blank"><!--?xml version="1.0" ?--><svg class="w-6 h-6" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Background_1_"><radialGradient cx="51.9924" cy="13.5086" gradientTransform="matrix(5.660332e-002 -1.08 0.918 4.811314e-002 -5.988 520.5566)" gradientUnits="userSpaceOnUse" id="SVGID_1_" r="684.4449"><stop offset="0" style="stop-color:#FED576"></stop><stop offset="0.2634" style="stop-color:#F47133"></stop><stop offset="0.6091" style="stop-color:#BC3081"></stop><stop offset="1" style="stop-color:#4C63D2"></stop></radialGradient><path d="M0,249.5v13.8C3.6,395.7,110.2,502,237.1,512h39C403.7,501.9,508.5,394.7,512,263.1v-13.6    C508.5,115.6,400.1,7,269.4,0.3C128.8-6.8,3.9,106,0,249.5z" fill="url(#SVGID_1_)"></path></g><g id="Symbol"><g><path d="M257.2,128.6c40.8,0,45.6,0.1,61.8,0.9c14.9,0.6,22.9,3.2,28.3,5.3c7.1,2.8,12.2,6.2,17.5,11.6     c5.3,5.4,8.7,10.6,11.5,17.8c2.1,5.5,4.5,13.7,5.3,28.9c0.8,16.4,0.9,21.3,0.9,62.8s-0.1,46.4-0.9,62.8     c-0.6,15.1-3.1,23.4-5.3,28.9c-2.8,7.2-6.1,12.4-11.5,17.8c-5.3,5.4-10.4,8.8-17.5,11.6c-5.4,2.2-13.5,4.7-28.3,5.3     c-16.1,0.8-21,0.9-61.8,0.9s-45.6-0.1-61.8-0.9c-14.9-0.6-22.9-3.2-28.3-5.3c-7.1-2.8-12.2-6.2-17.5-11.6s-8.7-10.6-11.5-17.8     c-2.1-5.5-4.5-13.7-5.3-28.9c-0.8-16.4-0.9-21.3-0.9-62.8s0.1-46.4,0.9-62.8c0.6-15.1,3.1-23.4,5.3-28.9     c2.8-7.2,6.1-12.4,11.5-17.8c5.3-5.4,10.4-8.8,17.5-11.6c5.4-2.2,13.5-4.7,28.3-5.3C211.5,128.8,216.4,128.6,257.2,128.6      M257.2,100.6c-41.5,0-46.7,0.2-62.9,1s-27.4,3.4-37.1,7.2c-10.1,4-18.6,9.3-27,18c-8.5,8.7-13.7,17.3-17.6,27.6     c-3.8,9.8-6.4,21.2-7.1,37.7c-0.8,16.5-0.9,21.8-0.9,64s0.2,47.5,0.9,64c0.8,16.5,3.4,27.8,7.1,37.7c3.9,10.2,9.1,18.9,17.6,27.6     s17,14,27,18c9.7,3.9,20.9,6.5,37.1,7.2c16.3,0.8,21.5,1,62.9,1s46.7-0.2,62.9-1c16.2-0.8,27.4-3.4,37.1-7.2     c10.1-4,18.6-9.3,27-18c8.5-8.7,13.7-17.3,17.6-27.6c3.8-9.8,6.4-21.2,7.1-37.7c0.8-16.5,0.9-21.8,0.9-64s-0.2-47.5-0.9-64     c-0.8-16.5-3.4-27.8-7.1-37.7c-3.9-10.2-9.1-18.9-17.6-27.6s-17-14-27-18c-9.7-3.9-20.9-6.5-37.1-7.2     C303.9,100.8,298.6,100.6,257.2,100.6L257.2,100.6z" fill="#FFFFFF"></path><path d="M257.2,176.2c-43.4,0-78.4,35.7-78.4,79.8s35.1,79.8,78.4,79.8s78.4-35.7,78.4-79.8     S300.5,176.2,257.2,176.2z M257.2,307.8c-28.1,0-50.9-23.1-50.9-51.8s22.8-51.8,50.9-51.8s50.9,23.1,50.9,51.8     C308.1,284.7,285.3,307.8,257.2,307.8z" fill="#FFFFFF"></path><ellipse cx="338.7" cy="173" fill="#FFFFFF" rx="18.3" ry="18.6"></ellipse></g></g></g></svg> </a> <a href="https://open.spotify.com/user/8tk14z394g4cbv8zwag6k1ehy?si=6b7439074e7e4cbd" target="_blank"><svg class="w-6 h-6" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23.9999 0C10.7454 0 0 10.7451 0 23.9996C0 37.2555 10.7454 48 23.9999 48C37.2549 48 48 37.2555 48 23.9996C48 10.7451 37.2549 0 23.9999 0" fill="#1ED760"></path> <path d="M34.479 34.0945C34.0542 34.7911 33.1472 35.0093 32.4531 34.5848C26.9023 31.1922 19.9156 30.4261 11.6874 32.3055C10.8945 32.4872 10.1041 31.9904 9.92348 31.1978C9.7417 30.4049 10.2368 29.6146 11.0314 29.4336C20.0358 27.3753 27.7595 28.2611 33.9901 32.0683C34.6848 32.4926 34.9035 33.4001 34.479 34.0945" fill="white"></path> <path d="M37.3714 27.658C36.8368 28.5254 35.7026 28.7975 34.8363 28.2649C28.4841 24.3602 18.7972 23.2289 11.2818 25.5102C10.3074 25.8046 9.27793 25.2553 8.98183 24.2823C8.68827 23.3079 9.23785 22.2804 10.2108 21.9841C18.7961 19.3787 29.469 20.6405 36.7651 25.1243C37.6314 25.6578 37.9041 26.7925 37.3714 27.658" fill="white"></path> <path d="M37.6209 20.9557C30.0013 16.4306 17.433 16.0145 10.1592 18.2222C8.99085 18.5767 7.75564 17.9173 7.40196 16.7493C7.04799 15.5804 7.70653 14.346 8.87541 13.991C17.2255 11.4565 31.1059 11.9459 39.8777 17.1529C40.9286 17.7768 41.2729 19.1336 40.6502 20.1825C40.027 21.2332 38.669 21.5795 37.6209 20.9557" fill="white"></path> </svg> </a> <a href="https://www.youtube.com/@mister-ry" target="_blank"><svg class="w-6 h-6" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#FF0000"></path> <path d="M36.265 18.0732C35.9706 16.9422 35.1031 16.0516 34.0016 15.7493C32.0054 15.2 24 15.2 24 15.2C24 15.2 15.9946 15.2 13.9983 15.7493C12.8967 16.0516 12.0292 16.9422 11.7348 18.0732C11.2 20.1231 11.2 24.4 11.2 24.4C11.2 24.4 11.2 28.6768 11.7348 30.7268C12.0292 31.8578 12.8967 32.7484 13.9983 33.0508C15.9946 33.6 24 33.6 24 33.6C24 33.6 32.0054 33.6 34.0016 33.0508C35.1031 32.7484 35.9706 31.8578 36.265 30.7268C36.8 28.6768 36.8 24.4 36.8 24.4C36.8 24.4 36.8 20.1231 36.265 18.0732" fill="white"></path> <path d="M21.6 28.8V20.8L28 24.8001L21.6 28.8Z" fill="#FF0000"></path> </svg> </a> </div> </div> </footer> </body></html>
