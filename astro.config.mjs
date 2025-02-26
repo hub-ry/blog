@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://mister-ry.me',
+  output: 'static',
   base: '/blog',
   integrations: [mdx(), sitemap()],
   vite: {
