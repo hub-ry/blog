@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://hub-ry.github.io',
+  site: 'https://mister-ry.me',
   base: '/blog',
   integrations: [mdx(), sitemap()],
   vite: {
