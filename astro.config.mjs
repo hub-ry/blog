@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://hub-ry.github.io',
-  base: 'blog',
+  base: '/blog',
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
