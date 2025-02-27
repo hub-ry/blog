@@ -1,23 +1,21 @@
 
-footer {
 
-display: flex;
-
+.trademark {
+  display: flex;
+  max-width: 87ch;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: .75rem ;
+  font-weight: 300;
+  
 }
 
-
-
-.trademark{
-display: flex;
-font-size: small;
-white-space: nowrap;
-justify-content: center;
-margin-left: 32%;
-}
 
 
 .icon-container {
   display: flex;
-  padding-left: 275px;
   gap: 10px;
+  margin: 0 auto;
+  padding-left: 290px;
 }
